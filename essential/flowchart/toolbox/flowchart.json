@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Flowchart",
+    "id": "flowchart",
+    "diagram-types": [ "FCFlowchartDiagram" ],
+    "auto-expands": [ "FCFlowchartDiagram" ],
+    "items": [
+      { "label": "流", "id": "FCFlow", "icon": "icon-FCFlow", "rubberband": "line" },
+      { "label": "过程", "id": "FCProcess", "icon": "icon-FCProcess", "rubberband": "rect" },
+      { "label": "终端", "id": "FCTerminator", "icon": "icon-FCTerminator", "rubberband": "rect" },
+      { "label": "决策", "id": "FCDecision", "icon": "icon-FCDecision", "rubberband": "rect" },
+      { "label": "耽搁", "id": "FCDelay", "icon": "icon-FCDelay", "rubberband": "rect" },
+      { "label": "预定义流程", "id": "FCPredefinedProcess", "icon": "icon-FCPredefinedProcess", "rubberband": "rect" },
+      { "label": "替代流程", "id": "FCAlternateProcess", "icon": "icon-FCAlternateProcess", "rubberband": "rect" },
+      { "label": "数据", "id": "FCData", "icon": "icon-FCData", "rubberband": "rect" },
+      { "label": "文档", "id": "FCDocument", "icon": "icon-FCDocument", "rubberband": "rect" },
+      { "label": "多个文档", "id": "FCMultiDocument", "icon": "icon-FCMultiDocument", "rubberband": "rect" },
+      { "label": "预备", "id": "FCPreparation", "icon": "icon-FCPreparation", "rubberband": "rect" },
+      { "label": "陈列", "id": "FCDisplay", "icon": "icon-FCDisplay", "rubberband": "rect" },
+      { "label": "手动输入", "id": "FCManualInput", "icon": "icon-FCManualInput", "rubberband": "rect", "command-arg": { "generate-name": "Input" } },
+      { "label": "手动操作", "id": "FCManualOperation", "icon": "icon-FCManualOperation", "rubberband": "rect", "command-arg": { "generate-name": "Operation" } },
+      { "label": "卡片", "id": "FCCard", "icon": "icon-FCCard", "rubberband": "rect" },
+      { "label": "打孔纸带", "id": "FCPunchedTape", "icon": "icon-FCPunchedTape", "rubberband": "rect" },
+      { "label": "连接体", "id": "FCConnector", "icon": "icon-FCConnector", "rubberband": "rect", "command-arg": { "generate-name": "C" } },
+      { "label": "页外连接器", "id": "FCOffPageConnector", "icon": "icon-FCOffPageConnector", "rubberband": "rect", "command-arg": { "generate-name": "P" } },
+      { "label": "或者", "id": "FCOr", "icon": "icon-FCOr", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "求和结", "id": "FCSummingJunction", "icon": "icon-FCSummingJunction", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "整理", "id": "FCCollate", "icon": "icon-FCCollate", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "排序", "id": "FCSort", "icon": "icon-FCSort", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "合并", "id": "FCMerge", "icon": "icon-FCMerge", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "提取", "id": "FCExtract", "icon": "icon-FCExtract", "rubberband": "rect", "command-arg": { "model-init": { "name": "" } } },
+      { "label": "共享数据", "id": "FCStoredData", "icon": "icon-FCStoredData", "rubberband": "rect" },
+      { "label": "数据库", "id": "FCDatabase", "icon": "icon-FCDatabase", "rubberband": "rect" },
+      { "label": "直接访问存储", "id": "FCDirectAccessStorage", "icon": "icon-FCDirectAccessStorage", "rubberband": "rect" },
+      { "label": "内部存储", "id": "FCInternalStorage", "icon": "icon-FCInternalStorage", "rubberband": "rect" }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "label": "Entity-Relationship",
+    "id": "erd",
+    "diagram-types": [ "ERDDiagram" ],
+    "auto-expands": [ "ERDDiagram" ],
+    "items": [
+      { "label": "实体", "id": "ERDEntity", "icon": "icon-ERDEntity", "rubberband": "rect" },
+      { "label": "一对一关系", "id": "ERDRelationship", "icon": "icon-ERDOneToOne", "rubberband": "line" },
+      {
+        "label": "一对多关系",
+        "id": "ERDRelationshipOneToMany",
+        "icon": "icon-ERDOneToMany",
+        "rubberband": "line",
+        "command-arg": {
+          "id": "ERDRelationship",
+          "model-init": {
+            "end2": {
+              "cardinality": "0..*"
+            }
+          }
+        }
+      },
+      {
+        "label": "多对多关系",
+        "id": "ERDRelationshipManyToMany",
+        "icon": "icon-ERDManyToMany",
+        "rubberband": "line",
+        "command-arg": {
+          "id": "ERDRelationship",
+          "model-init": {
+            "end1": {
+              "cardinality": "0..*"
+            },
+            "end2": {
+              "cardinality": "0..*"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

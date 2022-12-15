@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "id": "format",
+      "submenu": [
+        { "type": "separator" },
+        {
+          "label": "布局",
+          "id": "format.layout",
+          "submenu": [
+            { "label": "自动", "id": "format.layout.auto", "command": "diagram-layout:auto" },
+            { "type": "separator" },
+            { "label": "从上到下", "id": "format.layout.top-bottom", "command": "diagram-layout:top-bottom" },
+            { "label": "从下到上", "id": "format.layout.bottom-top", "command": "diagram-layout:bottom-top" },
+            { "label": "从左到右", "id": "format.layout.left-right", "command": "diagram-layout:left-right" },
+            { "label": "从右到左", "id": "format.layout.right-left", "command": "diagram-layout:right-left" }
+          ]
+        }
+      ]
+    }
+  ]
+}

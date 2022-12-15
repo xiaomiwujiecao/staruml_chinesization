@@ -1,0 +1,66 @@
+{
+  "menu": [
+    {
+      "id": "format",
+      "submenu": [
+        { "type": "separator" },
+        {
+          "label": "协调",
+          "id": "format.alignment",
+          "submenu": [
+            { "label": "向下移一层", "id": "format.alignment.send-to-back", "command": "alignment:send-to-back" },
+            { "label": "Bring To Front", "id": "format.alignment.bring-to-front", "command": "alignment:bring-to-front" },
+            { "type": "separator" },
+            { "label": "左对齐", "id": "format.alignment.align-left", "command": "alignment:align-left" },
+            { "label": "右对齐", "id": "format.alignment.align-right", "command": "alignment:align-right" },
+            { "label": "居中对齐", "id": "format.alignment.align-center", "command": "alignment:align-center" },
+            { "type": "separator" },
+            { "label": "顶部对齐", "id": "format.alignment.align-top", "command": "alignment:align-top" },
+            { "label": "底部对齐", "id": "format.alignment.align-bottom", "command": "alignment:align-bottom" },
+            { "label": "居中对齐", "id": "format.alignment.align-middle", "command": "alignment:align-middle" },
+            { "type": "separator" },
+            { "label": "空间均等，水平", "id": "format.alignment.space-equally-horizontally", "command": "alignment:space-equally-horizontally" },
+            { "label": "空间均等，垂直", "id": "format.alignment.space-equally-vertically", "command": "alignment:space-equally-vertically" },
+            { "type": "separator" },
+            { "label": "平均设置宽度", "id": "format.alignment.set-width-equally", "command": "alignment:set-width-equally" },
+            { "label": "平均设置高度", "id": "format.alignment.set-height-equally", "command": "alignment:set-height-equally" },
+            { "label": "平均设置大小", "id": "format.alignment.set-size-equally", "command": "alignment:set-size-equally" }
+          ]
+        }
+      ]
+    }
+  ],
+  "context-menu": {
+    "diagram-canvas": [
+      {
+        "id": "format",
+        "submenu": [
+          { "type": "separator" },
+          {
+            "label": "Alignment",
+            "id": "format.alignment",
+            "submenu": [
+              { "label": "发送到底层", "id": "format.alignment.send-to-back", "command": "alignment:send-to-back" },
+              { "label": "置于前台", "id": "format.alignment.bring-to-front", "command": "alignment:bring-to-front" },
+              { "type": "separator" },
+              { "label": "左对齐", "id": "format.alignment.align-left", "command": "alignment:align-left" },
+              { "label": "右对齐", "id": "format.alignment.align-right", "command": "alignment:align-right" },
+              { "label": "居中对齐", "id": "format.alignment.align-center", "command": "alignment:align-center" },
+              { "type": "separator" },
+              { "label": "顶部对齐", "id": "format.alignment.align-top", "command": "alignment:align-top" },
+              { "label": "底部对齐", "id": "format.alignment.align-bottom", "command": "alignment:align-bottom" },
+              { "label": "居中对齐", "id": "format.alignment.align-middle", "command": "alignment:align-middle" },
+              { "type": "separator" },
+              { "label": "空间均等，水平", "id": "format.alignment.space-equally-horizontally", "command": "alignment:space-equally-horizontally" },
+              { "label": "空间相等，垂直", "id": "format.alignment.space-equally-vertically", "command": "alignment:space-equally-vertically" },
+              { "type": "separator" },
+              { "label": "平均设置宽度", "id": "format.alignment.set-width-equally", "command": "alignment:set-width-equally" },
+              { "label": "平均设置高度", "id": "format.alignment.set-height-equally", "command": "alignment:set-height-equally" },
+              { "label": "平均设置大小", "id": "format.alignment.set-size-equally", "command": "alignment:set-size-equally" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

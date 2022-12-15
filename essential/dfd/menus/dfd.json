@@ -1,0 +1,55 @@
+{
+  "menu": [
+    {
+      "id": "model.add-diagram",
+      "submenu": [
+        { "label": "数据流图", "id": "dfd.diagram", "command": "factory:create-diagram", "command-arg": { "id": "DFDDiagram" } }
+      ]
+    },
+    {
+      "id": "model.add",
+      "submenu": [
+        { "label": "数据流模型", "id": "dfd.data-flow-model", "command": "factory:create-model", "command-arg": {"id":"DFDDataFlowModel"} },
+        { "label": "外部项", "id": "dfd.external-entity", "command": "factory:create-model", "command-arg": {"id":"DFDExternalEntity"} },
+        { "label": "过程", "id": "dfd.process", "command": "factory:create-model", "command-arg": {"id":"DFDProcess"} },
+        { "label": "数据存储", "id": "dfd.data-store", "command": "factory:create-model", "command-arg": {"id":"DFDDataStore"} }
+      ]
+    }
+  ],
+  "context-menu": {
+    "diagram-canvas": [
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "数据流模型", "id": "dfd.data-flow-model", "command": "factory:create-model", "command-arg": {"id":"DFDDataFlowModel"} },
+          { "label": "额外实体", "id": "dfd.external-entity", "command": "factory:create-model", "command-arg": {"id":"DFDExternalEntity"} },
+          { "label": "过程", "id": "dfd.process", "command": "factory:create-model", "command-arg": {"id":"DFDProcess"} },
+          { "label": "数据存储", "id": "dfd.data-store", "command": "factory:create-model", "command-arg": {"id":"DFDDataStore"} }
+        ]
+      },
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "数据流图", "id": "dfd.diagram", "command": "factory:create-diagram", "command-arg": { "id": "DFDDiagram" } }
+        ]
+      }  
+    ],
+    "model-explorer": [
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "数据流图", "id": "dfd.diagram", "command": "factory:create-diagram", "command-arg": { "id": "DFDDiagram" } }
+        ]
+      },
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "数据流模型", "id": "dfd.data-flow-model", "command": "factory:create-model", "command-arg": {"id":"DFDDataFlowModel"} },
+          { "label": "外部实体", "id": "dfd.external-entity", "command": "factory:create-model", "command-arg": {"id":"DFDExternalEntity"} },
+          { "label": "步骤", "id": "dfd.process", "command": "factory:create-model", "command-arg": {"id":"DFDProcess"} },
+          { "label": "数据存储", "id": "dfd.data-store", "command": "factory:create-model", "command-arg": {"id":"DFDDataStore"} }
+        ]
+      }
+    ]
+  }
+}

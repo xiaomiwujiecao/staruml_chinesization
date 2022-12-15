@@ -1,0 +1,121 @@
+{
+  "menu": [
+    {
+      "id": "model.add-diagram",
+      "submenu": [
+        { "label": "需求图", "id": "sysml.requirement-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLRequirementDiagram"} },
+        { "label": "模块定义图", "id": "sysml.block-definition-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLBlockDefinitionDiagram"} },
+        { "label": "内部框图", "id": "sysml.internal-block-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLInternalBlockDiagram"} },
+        { "label": "参数图", "id": "sysml.parametric-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLParametricDiagram"} }
+      ]
+    },
+    {
+      "id": "model.add",
+      "submenu": [
+        { "label": " 要求,", "id": "sysml.requirement", "command": "factory:create-model", "command-arg": {"id": "SysMLRequirement"} },
+        { "label": "块", "id": "sysml.block", "command": "factory:create-model", "command-arg": {"id": "SysMLBlock"} },
+        { "label": "值类型", "id": "sysml.value-type", "command": "factory:create-model", "command-arg": {"id": "SysMLValueType"} },
+        { "label": "接口模块", "id": "sysml.interface-block", "command": "factory:create-model", "command-arg": {"id": "SysMLInterfaceBlock"} },
+        { "label": "约束块", "id": "sysml.constraint-block", "command": "factory:create-model", "command-arg": {"id": "SysMLConstraintBlock"} },
+        { "label": "部分", "id": "sysml.part", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parts", "generate-name": "Part", "model-init": { "aggregation": "composite" } } },
+        { "label": "引用", "id": "sysml.reference", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "references", "generate-name": "Reference"} },
+        { "label": "值", "id": "sysml.value", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "values", "generate-name": "Value", "model-init": { "aggregation": "composite" } } },
+        { "label": "端口", "id": "sysml.port", "command": "factory:create-model", "command-arg": {"id": "SysMLPort", "field": "ports"} },
+        { "label": "属性", "id": "sysml.property", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "properties"} },
+        { "label": "约束属性", "id": "sysml.constraint", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "constraints", "generate-name": "Constraint"} },
+        { "label": "流动特性", "id": "sysml.flow-property", "command": "factory:create-model", "command-arg": {"id": "SysMLFlowProperty", "field": "flowProperties", "generate-name": "FlowProperty"} },
+        { "label": "参数", "id": "sysml.parameter", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parameters", "generate-name": "Parameter"} }
+  ]
+    },
+    {
+      "id": "format",
+      "submenu": [
+        { "type": "separator" },
+        { "label": "禁用显示属性值", "id": "format.suppress-property-values", "type": "checkbox", "command": "format:suppress-property-values" },
+        { "label": "禁用约束", "id": "format.suppress-constraints", "type": "checkbox", "command": "format:suppress-constraints" },
+        { "label": "禁用部分", "id": "format.suppress-parts", "type": "checkbox", "command": "format:suppress-parts" },
+        { "label": "禁用端口", "id": "format.suppress-ports", "type": "checkbox", "command": "format:suppress-ports" },
+        { "label": "禁用引用", "id": "format.suppress-references", "type": "checkbox", "command": "format:suppress-references" },
+        { "label": "禁用值", "id": "format.suppress-values", "type": "checkbox", "command": "format:suppress-values" },
+        { "label": "禁用属性", "id": "format.suppress-properties", "type": "checkbox", "command": "format:suppress-properties" },
+        { "label": "禁用流属性", "id": "format.suppress-flow-properties", "type": "checkbox", "command": "format:suppress-flow-properties" },
+        { "type": "separator" }
+      ]
+    }
+  ],
+  "context-menu": {
+    "diagram-canvas": [
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "需要", "id": "sysml.requirement", "command": "factory:create-model", "command-arg": {"id": "SysMLRequirement"} },
+          { "label": "块", "id": "sysml.block", "command": "factory:create-model", "command-arg": {"id": "SysMLBlock"} },
+          { "label": "值类型", "id": "sysml.value-type", "command": "factory:create-model", "command-arg": {"id": "SysMLValueType"} },
+          { "label": "接口块", "id": "sysml.interface-block", "command": "factory:create-model", "command-arg": {"id": "SysMLInterfaceBlock"} },
+          { "label": "约束块", "id": "sysml.constraint-block", "command": "factory:create-model", "command-arg": {"id": "SysMLConstraintBlock"} },
+          { "label": "部分", "id": "sysml.part", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parts", "generate-name": "Part", "model-init": { "aggregation": "composite" } } },
+          { "label": "引用", "id": "sysml.reference", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "references", "generate-name": "Reference"} },
+          { "label": "值", "id": "sysml.value", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "values", "generate-name": "Value", "model-init": { "aggregation": "composite" } } },
+          { "label": "端口", "id": "sysml.port", "command": "factory:create-model", "command-arg": {"id": "SysMLPort", "field": "ports"} },
+          { "label": "属性", "id": "sysml.property", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "properties"} },
+          { "label": "约束属性", "id": "sysml.constraint", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "constraints", "generate-name": "Constraint"} },
+          { "label": "流动特性", "id": "sysml.flow-property", "command": "factory:create-model", "command-arg": {"id": "SysMLFlowProperty", "field": "flowProperties", "generate-name": "FlowProperty"} },
+          { "label": "参数", "id": "sysml.parameter", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parameters", "generate-name": "Parameter"} }
+        ]
+      },
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "需求图", "id": "sysml.requirement-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLRequirementDiagram"} },
+          { "label": "块定义图", "id": "sysml.block-definition-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLBlockDefinitionDiagram"} },
+          { "label": "内部框图", "id": "sysml.internal-block-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLInternalBlockDiagram"} },
+          { "label": "参数图", "id": "sysml.parametric-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLParametricDiagram"} }
+        ]
+      },  
+      {
+        "id": "format",
+        "submenu": [
+          { "type": "separator" },
+          { "label": "禁止显示属性值", "id": "format.suppress-property-values", "type": "checkbox", "command": "format:suppress-property-values" },
+          { "label": "禁用约束", "id": "format.suppress-constraints", "type": "checkbox", "command": "format:suppress-constraints" },
+          { "label": "禁用部分", "id": "format.suppress-parts", "type": "checkbox", "command": "format:suppress-parts" },
+          { "label": "禁用端口", "id": "format.suppress-ports", "type": "checkbox", "command": "format:suppress-ports" },
+          { "label": "禁用引用", "id": "format.suppress-references", "type": "checkbox", "command": "format:suppress-references" },
+          { "label": "禁用值", "id": "format.suppress-values", "type": "checkbox", "command": "format:suppress-values" },
+          { "label": "禁用属性", "id": "format.suppress-properties", "type": "checkbox", "command": "format:suppress-properties" },
+          { "label": "禁用流属性", "id": "format.suppress-flow-properties", "type": "checkbox", "command": "format:suppress-flow-properties" },
+          { "type": "separator" }
+        ]
+      }
+    ],
+    "model-explorer": [
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "需求图", "id": "sysml.requirement-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLRequirementDiagram"} },
+          { "label": "块定义图", "id": "sysml.block-definition-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLBlockDefinitionDiagram"} },
+          { "label": "内部框图", "id": "sysml.internal-block-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLInternalBlockDiagram"} },
+          { "label": "参数图", "id": "sysml.parametric-diagram", "command": "factory:create-diagram", "command-arg": {"id": "SysMLParametricDiagram"} }  
+        ]
+      },
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "需求", "id": "sysml.requirement", "command": "factory:create-model", "command-arg": {"id": "SysMLRequirement"} },
+          { "label": "块", "id": "sysml.block", "command": "factory:create-model", "command-arg": {"id": "SysMLBlock"} },
+          { "label": "值类型", "id": "sysml.value-type", "command": "factory:create-model", "command-arg": {"id": "SysMLValueType"} },
+          { "label": "内部块", "id": "sysml.interface-block", "command": "factory:create-model", "command-arg": {"id": "SysMLInterfaceBlock"} },
+          { "label": "约束块", "id": "sysml.constraint-block", "command": "factory:create-model", "command-arg": {"id": "SysMLConstraintBlock"} },
+          { "label": "部分", "id": "sysml.part", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parts", "generate-name": "Part", "model-init": { "aggregation": "composite" } } },
+          { "label": "引用", "id": "sysml.reference", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "references", "generate-name": "Reference"} },
+          { "label": "值", "id": "sysml.value", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "values", "generate-name": "Value", "model-init": { "aggregation": "composite" } } },
+          { "label": "端口", "id": "sysml.port", "command": "factory:create-model", "command-arg": {"id": "SysMLPort", "field": "ports"} },
+          { "label": "属性", "id": "sysml.property", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "properties"} },
+          { "label": "约束属性", "id": "sysml.constraint", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "constraints", "generate-name": "Constraint"} },
+          { "label": "流属性", "id": "sysml.flow-property", "command": "factory:create-model", "command-arg": {"id": "SysMLFlowProperty", "field": "flowProperties", "generate-name": "FlowProperty"} },
+          { "label": "参数", "id": "sysml.parameter", "command": "factory:create-model", "command-arg": {"id": "SysMLProperty", "field": "parameters", "generate-name": "Parameter" } }
+        ]
+      }
+    ]
+  }
+}

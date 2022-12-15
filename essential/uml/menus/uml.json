@@ -1,0 +1,293 @@
+{
+  "menu": [
+    {
+      "id": "file.new-from-template",
+      "submenu": [
+        { "label": "UML 最小化", "command": "uml:new-from-template", "command-arg": "templates/UMLMinimal.mdj" },
+        { "label": "UML 常规", "command": "uml:new-from-template", "command-arg": "templates/UMLConventional.mdj" },
+        { "label": "4+1 视图模型", "command": "uml:new-from-template", "command-arg": "templates/4p1ViewModel.mdj" },
+        { "label": "合理的", "command": "uml:new-from-template", "command-arg": "templates/Rational.mdj" }
+      ]
+    },
+    {
+      "id": "format",
+      "submenu": [
+        { "type": "separator" },
+        {
+          "label": "原型显示",
+          "id": "format.stereotype",
+          "submenu": [
+            { "label": "空", "id": "format.stereotype.none", "type": "checkbox", "command": "format:stereotype-none" },
+            { "label": "标签", "id": "format.stereotype.label", "type": "checkbox", "command": "format:stereotype-label" },
+            { "label": "装饰", "id": "format.stereotype.decoration", "type": "checkbox", "command": "format:stereotype-decoration" },
+            { "label": "带标签的装饰", "id": "format.stereotype.decoration-label", "type": "checkbox", "command": "format:stereotype-decoration-label" },
+            { "label": "图标", "id": "format.stereotype.icon", "type": "checkbox", "command": "format:stereotype-icon" },
+            { "label": "带标签的图标", "id": "format.stereotype.icon-label", "type": "checkbox", "command": "format:stereotype-icon-label" }
+          ]
+        },
+        { "label": "自动换行", "id": "format.word-wrap", "type": "checkbox", "command": "format:word-wrap" },
+        { "label": "显示可见性", "id": "format.show-visibility", "type": "checkbox", "command": "format:show-visibility" },
+        { "label": "显示命名空间", "id": "format.show-namespace", "type": "checkbox", "command": "format:show-namespace" },
+        { "label": "展示属性", "id": "format.show-property", "type": "checkbox", "command": "format:show-property" },
+        { "label": "展示类型", "id": "format.show-type", "type": "checkbox", "command": "format:show-type" },
+        { "label": "显示多样性", "id": "format.show-multiplicity", "type": "checkbox", "command": "format:show-multiplicity" },
+        { "label": "显示操作签名", "id": "format.show-operation-signature", "type": "checkbox", "command": "format:show-operation-signature" },
+        { "type": "separator" },
+        { "label": "隐藏属性", "id": "format.suppress-attributes", "type": "checkbox", "command": "format:suppress-attributes" },
+        { "label": "隐藏操作", "id": "format.suppress-operations", "type": "checkbox", "command": "format:suppress-operations" },
+        { "label": "隐藏接收", "id": "format.suppress-receptions", "type": "checkbox", "command": "format:suppress-receptions" },
+        { "label": "隐藏字面量", "id": "format.suppress-literals", "type": "checkbox", "command": "format:suppress-literals" }
+      ]
+    },
+    {
+      "id": "model.add-diagram",
+      "submenu": [
+        { "label": "类图", "id": "uml.class-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLClassDiagram"} },
+        { "label": "套件图", "id": "uml.package-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLPackageDiagram"} },
+        { "label": "物件图", "id": "uml.object-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLObjectDiagram"} },
+        { "label": "组合结构图", "id": "uml.composite-structure-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCompositeStructureDiagram"} },
+        { "label": "组件图", "id": "uml.component-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLComponentDiagram"} },
+        { "label": "部署图", "id": "uml.deployment-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLDeploymentDiagram"} },
+        { "label": "用例图", "id": "uml.usecase-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLUseCaseDiagram"} },
+        { "label": "序列图", "id": "uml.sequence-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLSequenceDiagram"} },
+        { "label": "协作图", "id": "uml.communication-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCommunicationDiagram"} },
+        { "label": "时序图", "id": "uml.timing-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLTimingDiagram"} },
+        { "label": "交互概述图", "id": "uml.interaction-overview-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInteractionOverviewDiagram"} },
+        { "label": "信息流程图", "id": "uml.information-flow-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInformationFlowDiagram"} },
+        { "label": "状态机图", "id": "uml.statechart-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLStatechartDiagram"} },
+        { "label": "活动图", "id": "uml.activity-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLActivityDiagram"} },
+        { "label": "剖面图", "id": "uml.profile-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLProfileDiagram"} }
+      ]
+    },
+    {
+      "id": "model.add",
+      "submenu": [
+        { "label": "模板参数", "id": "uml.template-parameter", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameter", "field": "templateParameters"} },
+        { "label": "模板参数替换", "id": "uml.template-parameter-substitution", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameterSubstitution", "field": "parameterSubstitutions"} },
+        { "label": "参数", "id": "uml.parameter", "command": "factory:create-model", "command-arg": {"id": "UMLParameter", "field": "parameters"} },
+        { "label": "枚举文本", "id": "uml.enumeration-literal", "command": "factory:create-model", "command-arg": {"id": "UMLEnumerationLiteral", "field": "literals"} },
+        { "label": "属性", "id": "uml.attribute", "command": "factory:create-model", "command-arg": {"id": "UMLAttribute", "field": "attributes"} },
+        { "label": "端口", "id": "uml.port", "command": "factory:create-model", "command-arg": {"id": "UMLPort", "field": "attributes"} },
+        { "label": "操作", "id": "uml.operation", "command": "factory:create-model", "command-arg": {"id": "UMLOperation", "field": "operations"} },
+        { "label": "接收", "id": "uml.reception", "command": "factory:create-model", "command-arg": {"id": "UMLReception", "field": "receptions"} },
+        { "label": "拓展点", "id": "uml.extension-point", "command": "factory:create-model", "command-arg": {"id": "UMLExtensionPoint", "field": "extensionPoints"} },
+        { "label": "插槽", "id": "uml.slot", "command": "factory:create-model", "command-arg": {"id": "UMLSlot", "field": "slots"} },
+        { "label": "交互操作", "id": "uml.interaction-operand", "command": "factory:create-model", "command-arg": {"id": "UMLInteractionOperand", "field": "operands"} },
+        { "label": "模型", "id": "uml.model", "command": "factory:create-model", "command-arg": {"id": "UMLModel"} },
+        { "label": "子系统", "id": "uml.subsystem", "command": "factory:create-model", "command-arg": {"id": "UMLSubsystem"} },
+        { "label": "包", "id": "uml.package", "command": "factory:create-model", "command-arg": {"id": "UMLPackage"} },
+        { "label": "用户预置文件", "id": "uml.profile", "command": "factory:create-model", "command-arg": {"id": "UMLProfile"} },
+        { "label": "类", "id": "uml.class", "command": "factory:create-model", "command-arg": {"id": "UMLClass"} },
+        { "label": "接口", "id": "uml.interface", "command": "factory:create-model", "command-arg": {"id": "UMLInterface"} },
+        { "label": "信号", "id": "uml.signal", "command": "factory:create-model", "command-arg": {"id": "UMLSignal"} },
+        { "label": "数据类型", "id": "uml.datatype", "command": "factory:create-model", "command-arg": {"id": "UMLDataType"} },
+        { "label": "原始类型", "id": "uml.primitive-type", "command": "factory:create-model", "command-arg": {"id": "UMLPrimitiveType"} },
+        { "label": "枚举", "id": "uml.enumeration", "command": "factory:create-model", "command-arg": {"id": "UMLEnumeration"} },
+        { "label": "产品", "id": "uml.artifact", "command": "factory:create-model", "command-arg": {"id": "UMLArtifact"} },
+        { "label": "组件", "id": "uml.component", "command": "factory:create-model", "command-arg": {"id": "UMLComponent"} },
+        { "label": "节点", "id": "uml.node", "command": "factory:create-model", "command-arg": {"id": "UMLNode"} },
+        { "label": "用例", "id": "uml.usecase", "command": "factory:create-model", "command-arg": {"id": "UMLUseCase"} },
+        { "label": "行动者", "id": "uml.actor", "command": "factory:create-model", "command-arg": {"id": "UMLActor"} },
+        { "label": "模式化", "id": "uml.stereotype", "command": "factory:create-model", "command-arg": {"id": "UMLStereotype"} },
+        { "label": "信息项", "id": "uml.information-item", "command": "factory:create-model", "command-arg": {"id": "UMLInformationItem"} },
+        { "label": "合作", "id": "uml.collaboration", "command": "factory:create-model", "command-arg": {"id": "UMLCollaboration"} },
+        { "label": "相互作用", "id": "uml.interaction", "command": "factory:create-model", "command-arg": {"id": "UMLInteraction"} },
+        { "label": "状态机", "id": "uml.state-machine", "command": "factory:create-model", "command-arg": {"id": "UMLStateMachine"} },
+        { "label": "活动", "id": "uml.activity", "command": "factory:create-model", "command-arg": {"id": "UMLActivity"} },
+        { "label": "不透明行为", "id": "uml.opaque-behavior", "command": "factory:create-model", "command-arg": {"id": "UMLOpaqueBehavior"} },
+        { "label": "状态", "id": "uml.state", "command": "factory:create-model", "command-arg": {"id": "UMLState"} },
+        { "label": "范围", "id": "uml.region", "command": "factory:create-model", "command-arg": {"id": "UMLRegion"} },
+        { "label": "实体活动", "id": "uml.entry-activity", "command": "uml:create-model.entry-activity" },
+        { "label": "执行活动", "id": "uml.do-activity", "command": "uml:create-model.do-activity" },
+        { "label": "退出活动", "id": "uml.exit-activity", "command": "uml:create-model.exit-activity" },
+        { "label": "触发", "id": "uml.trigger", "command": "factory:create-model", "command-arg": {"id": "UMLEvent", "field": "triggers"} },
+        { "label": "效果", "id": "uml.effect", "command": "uml:create-model.effect" },
+        { "label": "行动", "id": "uml.action", "command": "factory:create-model", "command-arg": {"id": "UMLAction", "field": "nodes"} },
+        { "label": "约束", "id": "uml.constraint", "command": "uml:create-model.constraint" }
+      ]
+    },
+    {
+      "id": "model",
+      "submenu": [
+        { "type": "separator" },
+        {
+          "label": "Apply Profile",
+          "id": "uml.apply-profile",
+          "submenu": [
+            { "label": "UML Standard Profile (v2)", "id": "uml.apply-profile.uml-standard", "command": "uml:apply-profile.uml-standard" }
+          ]
+        }
+      ]
+    }
+  ],
+  "context-menu": {
+    "diagram-canvas": [
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "模板参数", "id": "uml.template-parameter", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameter", "field": "templateParameters"} },
+          { "label": "模板参数替换", "id": "uml.template-parameter-substitution", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameterSubstitution", "field": "parameterSubstitutions"} },
+          { "label": "参数", "id": "uml.parameter", "command": "factory:create-model", "command-arg": {"id": "UMLParameter", "field": "parameters"} },
+          { "label": "枚举文本", "id": "uml.enumeration-literal", "command": "factory:create-model", "command-arg": {"id": "UMLEnumerationLiteral", "field": "literals"} },
+          { "label": "属性", "id": "uml.attribute", "command": "factory:create-model", "command-arg": {"id": "UMLAttribute", "field": "attributes"} },
+          { "label": "端口", "id": "uml.port", "command": "factory:create-model", "command-arg": {"id": "UMLPort", "field": "attributes"} },
+          { "label": "惭怍", "id": "uml.operation", "command": "factory:create-model", "command-arg": {"id": "UMLOperation", "field": "operations"} },
+          { "label": "接收", "id": "uml.reception", "command": "factory:create-model", "command-arg": {"id": "UMLReception", "field": "receptions"} },
+          { "label": "拓展点", "id": "uml.extension-point", "command": "factory:create-model", "command-arg": {"id": "UMLExtensionPoint", "field": "extensionPoints"} },
+          { "label": "插槽", "id": "uml.slot", "command": "factory:create-model", "command-arg": {"id": "UMLSlot", "field": "slots"} },
+          { "label": "交互操作域", "id": "uml.interaction-operand", "command": "factory:create-model", "command-arg": {"id": "UMLInteractionOperand", "field": "operands"} },
+          { "label": "模型", "id": "uml.model", "command": "factory:create-model", "command-arg": {"id": "UMLModel"} },
+          { "label": "子系统", "id": "uml.subsystem", "command": "factory:create-model", "command-arg": {"id": "UMLSubsystem"} },
+          { "label": "包", "id": "uml.package", "command": "factory:create-model", "command-arg": {"id": "UMLPackage"} },
+          { "label": "用户预置文件", "id": "uml.profile", "command": "factory:create-model", "command-arg": {"id": "UMLProfile"} },
+          { "label": "类", "id": "uml.class", "command": "factory:create-model", "command-arg": {"id": "UMLClass"} },
+          { "label": "接口", "id": "uml.interface", "command": "factory:create-model", "command-arg": {"id": "UMLInterface"} },
+          { "label": "小信号", "id": "uml.signal", "command": "factory:create-model", "command-arg": {"id": "UMLSignal"} },
+          { "label": "数据类型", "id": "uml.datatype", "command": "factory:create-model", "command-arg": {"id": "UMLDataType"} },
+          { "label": "原始类型", "id": "uml.primitive-type", "command": "factory:create-model", "command-arg": {"id": "UMLPrimitiveType"} },
+          { "label": "枚举", "id": "uml.enumeration", "command": "factory:create-model", "command-arg": {"id": "UMLEnumeration"} },
+          { "label": "产物", "id": "uml.artifact", "command": "factory:create-model", "command-arg": {"id": "UMLArtifact"} },
+          { "label": "组件", "id": "uml.component", "command": "factory:create-model", "command-arg": {"id": "UMLComponent"} },
+          { "label": "节点", "id": "uml.node", "command": "factory:create-model", "command-arg": {"id": "UMLNode"} },
+          { "label": "用例", "id": "uml.usecase", "command": "factory:create-model", "command-arg": {"id": "UMLUseCase"} },
+          { "label": "参与者", "id": "uml.actor", "command": "factory:create-model", "command-arg": {"id": "UMLActor"} },
+          { "label": "模式化", "id": "uml.stereotype", "command": "factory:create-model", "command-arg": {"id": "UMLStereotype"} },
+          { "label": "信息项", "id": "uml.information-item", "command": "factory:create-model", "command-arg": {"id": "UMLInformationItem"} },
+          { "label": "合作", "id": "uml.collaboration", "command": "factory:create-model", "command-arg": {"id": "UMLCollaboration"} },
+          { "label": "相互作用", "id": "uml.interaction", "command": "factory:create-model", "command-arg": {"id": "UMLInteraction"} },
+          { "label": "状态机", "id": "uml.state-machine", "command": "factory:create-model", "command-arg": {"id": "UMLStateMachine"} },
+          { "label": "活动", "id": "uml.activity", "command": "factory:create-model", "command-arg": {"id": "UMLActivity"} },
+          { "label": "不透明行为", "id": "uml.opaque-behavior", "command": "factory:create-model", "command-arg": {"id": "UMLOpaqueBehavior"} },
+          { "label": "状态", "id": "uml.state", "command": "factory:create-model", "command-arg": {"id": "UMLState"} },
+          { "label": "地区", "id": "uml.region", "command": "factory:create-model", "command-arg": {"id": "UMLRegion", "field": "regions"} },
+          { "label": "实体活动", "id": "uml.entry-activity", "command": "uml:create-model.entry-activity" },
+          { "label": "执行活动", "id": "uml.do-activity", "command": "uml:create-model.do-activity" },
+          { "label": "退出活动", "id": "uml.exit-activity", "command": "uml:create-model.exit-activity" },
+          { "label": "触发", "id": "uml.trigger", "command": "factory:create-model", "command-arg": {"id": "UMLEvent", "field": "triggers"} },
+          { "label": "作用", "id": "uml.effect", "command": "uml:create-model.effect" },
+          { "label": "动作", "id": "uml.action", "command": "factory:create-model", "command-arg": {"id": "UMLAction", "field": "nodes"} },
+          { "label": "约数", "id": "uml.constraint", "command": "uml:create-model.constraint" }
+        ]
+      },
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "类图", "id": "uml.class-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLClassDiagram"} },
+          { "label": "套件图", "id": "uml.package-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLPackageDiagram"} },
+          { "label": "物料图", "id": "uml.object-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLObjectDiagram"} },
+          { "label": "复合结构图", "id": "uml.composite-structure-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCompositeStructureDiagram"} },
+          { "label": "组件图", "id": "uml.component-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLComponentDiagram"} },
+          { "label": "部署图", "id": "uml.deployment-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLDeploymentDiagram"} },
+          { "label": "用例图", "id": "uml.usecase-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLUseCaseDiagram"} },
+          { "label": "时序图", "id": "uml.sequence-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLSequenceDiagram"} },
+          { "label": "协作图", "id": "uml.communication-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCommunicationDiagram"} },
+          { "label": "时序图", "id": "uml.timing-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLTimingDiagram"} },
+          { "label": "交互概述图", "id": "uml.interaction-overview-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInteractionOverviewDiagram"} },
+          { "label": "信息流程图", "id": "uml.information-flow-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInformationFlowDiagram"} },
+          { "label": "状态图示意图", "id": "uml.statechart-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLStatechartDiagram"} },
+          { "label": "活动图", "id": "uml.activity-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLActivityDiagram"} },
+          { "label": "剖面图", "id": "uml.profile-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLProfileDiagram"} }
+        ]
+      },  
+      {
+        "id": "format",
+        "submenu": [
+          { "type": "separator" },
+          {
+            "label": "定型显示",
+            "id": "format.stereotype",
+            "submenu": [
+              { "label": "无", "id": "format.stereotype.none", "type": "checkbox", "command": "format:stereotype-none" },
+              { "label": "标注", "id": "format.stereotype.label", "type": "checkbox", "command": "format:stereotype-label" },
+              { "label": "装饰", "id": "format.stereotype.decoration", "type": "checkbox", "command": "format:stereotype-decoration" },
+              { "label": "标签装饰", "id": "format.stereotype.decoration-label", "type": "checkbox", "command": "format:stereotype-decoration-label" },
+              { "label": "图标", "id": "format.stereotype.icon", "type": "checkbox", "command": "format:stereotype-icon" },
+              { "label": "带标签的图标", "id": "format.stereotype.icon-label", "type": "checkbox", "command": "format:stereotype-icon-label" }
+            ]
+          },
+          { "label": "自动换行", "id": "format.word-wrap", "type": "checkbox", "command": "format:word-wrap" },
+          { "label": "显示可见性", "id": "format.show-visibility", "type": "checkbox", "command": "format:show-visibility" },
+          { "label": "显示命名空间", "id": "format.show-namespace", "type": "checkbox", "command": "format:show-namespace" },
+          { "label": "展示属性", "id": "format.show-property", "type": "checkbox", "command": "format:show-property" },
+          { "label": "展示类型", "id": "format.show-type", "type": "checkbox", "command": "format:show-type" },
+          { "label": "显示多样性", "id": "format.show-multiplicity", "type": "checkbox", "command": "format:show-multiplicity" },
+          { "label": "显示操作签名", "id": "format.show-operation-signature", "type": "checkbox", "command": "format:show-operation-signature" },
+          { "type": "separator" },
+          { "label": "隐藏属性", "id": "format.suppress-attributes", "type": "checkbox", "command": "format:suppress-attributes" },
+          { "label": "隐藏操作", "id": "format.suppress-operations", "type": "checkbox", "command": "format:suppress-operations" },
+          { "label": "隐藏接收", "id": "format.suppress-receptions", "type": "checkbox", "command": "format:suppress-receptions" },
+          { "label": "禁止显示文本", "id": "format.suppress-literals", "type": "checkbox", "command": "format:suppress-literals" }
+        ]
+      }
+    ],
+    "model-explorer": [
+      {
+        "id": "model.add-diagram",
+        "submenu": [
+          { "label": "类图", "id": "uml.class-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLClassDiagram"} },
+          { "label": "封装图", "id": "uml.package-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLPackageDiagram"} },
+          { "label": "对象关系图", "id": "uml.object-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLObjectDiagram"} },
+          { "label": "复合结构图", "id": "uml.composite-structure-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCompositeStructureDiagram"} },
+          { "label": "组件图", "id": "uml.component-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLComponentDiagram"} },
+          { "label": "部署图", "id": "uml.deployment-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLDeploymentDiagram"} },
+          { "label": "用例图", "id": "uml.usecase-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLUseCaseDiagram"} },
+          { "label": "序列图", "id": "uml.sequence-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLSequenceDiagram"} },
+          { "label": "协作图", "id": "uml.communication-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLCommunicationDiagram"} },
+          { "label": "通信图", "id": "uml.timing-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLTimingDiagram"} },
+          { "label": "交互概览图", "id": "uml.interaction-overview-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInteractionOverviewDiagram"} },
+          { "label": "信息流程图", "id": "uml.information-flow-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLInformationFlowDiagram"} },
+          { "label": "状态图示意图", "id": "uml.statechart-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLStatechartDiagram"} },
+          { "label": "活动图", "id": "uml.activity-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLActivityDiagram"} },
+          { "label": "轮廓图", "id": "uml.profile-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLProfileDiagram"} }
+        ]
+      },
+      {
+        "id": "model.add",
+        "submenu": [
+          { "label": "模板参数", "id": "uml.template-parameter", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameter", "field": "templateParameters"} },
+          { "label": "模板参数替换", "id": "uml.template-parameter-substitution", "command": "factory:create-model", "command-arg": {"id": "UMLTemplateParameterSubstitution", "field": "parameterSubstitutions"} },
+          { "label": "特性,", "id": "uml.parameter", "command": "factory:create-model", "command-arg": {"id": "UMLParameter", "field": "parameters"} },
+          { "label": "枚举文本", "id": "uml.enumeration-literal", "command": "factory:create-model", "command-arg": {"id": "UMLEnumerationLiteral", "field": "literals"} },
+          { "label": "属性,", "id": "uml.attribute", "command": "factory:create-model", "command-arg": {"id": "UMLAttribute", "field": "attributes"} },
+          { "label": "端口", "id": "uml.port", "command": "factory:create-model", "command-arg": {"id": "UMLPort", "field": "attributes"} },
+          { "label": "操作", "id": "uml.operation", "command": "factory:create-model", "command-arg": {"id": "UMLOperation", "field": "operations"} },
+          { "label": "接收", "id": "uml.reception", "command": "factory:create-model", "command-arg": {"id": "UMLReception", "field": "receptions"} },
+          { "label": "扩展点", "id": "uml.extension-point", "command": "factory:create-model", "command-arg": {"id": "UMLExtensionPoint", "field": "extensionPoints"} },
+          { "label": "插槽", "id": "uml.slot", "command": "factory:create-model", "command-arg": {"id": "UMLSlot", "field": "slots"} },
+          { "label": "交互操作域", "id": "uml.interaction-operand", "command": "factory:create-model", "command-arg": {"id": "UMLInteractionOperand", "field": "operands"} },
+          { "label": "模型", "id": "uml.model", "command": "factory:create-model", "command-arg": {"id": "UMLModel"} },
+          { "label": "子系统", "id": "uml.subsystem", "command": "factory:create-model", "command-arg": {"id": "UMLSubsystem"} },
+          { "label": "包", "id": "uml.package", "command": "factory:create-model", "command-arg": {"id": "UMLPackage"} },
+          { "label": "剖面", "id": "uml.profile", "command": "factory:create-model", "command-arg": {"id": "UMLProfile"} },
+          { "label": "类", "id": "uml.class", "command": "factory:create-model", "command-arg": {"id": "UMLClass"} },
+          { "label": "接口", "id": "uml.interface", "command": "factory:create-model", "command-arg": {"id": "UMLInterface"} },
+          { "label": "信号", "id": "uml.signal", "command": "factory:create-model", "command-arg": {"id": "UMLSignal"} },
+          { "label": "数据类型", "id": "uml.datatype", "command": "factory:create-model", "command-arg": {"id": "UMLDataType"} },
+          { "label": "基元类型", "id": "uml.primitive-type", "command": "factory:create-model", "command-arg": {"id": "UMLPrimitiveType"} },
+          { "label": "枚举", "id": "uml.enumeration", "command": "factory:create-model", "command-arg": {"id": "UMLEnumeration"} },
+          { "label": "产物", "id": "uml.artifact", "command": "factory:create-model", "command-arg": {"id": "UMLArtifact"} },
+          { "label": "组件", "id": "uml.component", "command": "factory:create-model", "command-arg": {"id": "UMLComponent"} },
+          { "label": "节点", "id": "uml.node", "command": "factory:create-model", "command-arg": {"id": "UMLNode"} },
+          { "label": "用例", "id": "uml.usecase", "command": "factory:create-model", "command-arg": {"id": "UMLUseCase"} },
+          { "label": "作用物", "id": "uml.actor", "command": "factory:create-model", "command-arg": {"id": "UMLActor"} },
+          { "label": "模式", "id": "uml.stereotype", "command": "factory:create-model", "command-arg": {"id": "UMLStereotype"} },
+          { "label": "信息项", "id": "uml.information-item", "command": "factory:create-model", "command-arg": {"id": "UMLInformationItem"} },
+          { "label": "协作", "id": "uml.collaboration", "command": "factory:create-model", "command-arg": {"id": "UMLCollaboration"} },
+          { "label": "相互作用", "id": "uml.interaction", "command": "factory:create-model", "command-arg": {"id": "UMLInteraction"} },
+          { "label": "状态机", "id": "uml.state-machine", "command": "factory:create-model", "command-arg": {"id": "UMLStateMachine"} },
+          { "label": "活跃", "id": "uml.activity", "command": "factory:create-model", "command-arg": {"id": "UMLActivity"} },
+          { "label": "不透明行为", "id": "uml.opaque-behavior", "command": "factory:create-model", "command-arg": {"id": "UMLOpaqueBehavior"} },
+          { "label": "状态", "id": "uml.state", "command": "factory:create-model", "command-arg": {"id": "UMLState", "field": "vertices"} },
+          { "label": "范围", "id": "uml.region", "command": "factory:create-model", "command-arg": {"id": "UMLRegion"} },
+          { "label": "实体活动", "id": "uml.entry-activity", "command": "uml:create-model.entry-activity" },
+          { "label": "执行活动", "id": "uml.do-activity", "command": "uml:create-model.do-activity" },
+          { "label": "退出活动", "id": "uml.exit-activity", "command": "uml:create-model.exit-activity" },
+          { "label": "触发", "id": "uml.trigger", "command": "factory:create-model", "command-arg": {"id": "UMLEvent", "field": "triggers"} },
+          { "label": "作用", "id": "uml.effect", "command": "uml:create-model.effect" },
+          { "label": "活动", "id": "uml.action", "command": "factory:create-model", "command-arg": {"id": "UMLAction", "field": "nodes"} },
+          { "label": "约束", "id": "uml.constraint", "command": "uml:create-model.constraint" }
+        ]
+      } 
+    ]
+  }
+}

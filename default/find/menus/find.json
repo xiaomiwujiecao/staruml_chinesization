@@ -1,0 +1,11 @@
+{
+  "menu": [
+    {
+      "id": "model",
+      "submenu": [
+        { "type": "separator" },
+        { "label": "查找", "id": "model.find", "command": "find:find" }
+      ]
+    }
+  ]
+}
