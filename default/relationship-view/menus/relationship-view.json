@@ -1,0 +1,17 @@
+{
+  "menu": [
+    {
+      "id": "view",
+      "submenu": [
+        { "type": "separator" },
+        { "label": " 联系", "id": "view.relationship-view", "type": "checkbox", "command": "relationship-view:toggle" }
+      ]
+    }
+  ],
+  "context-menu": {
+    "#relationship-view div.listview": [
+      { "label": "选择相关元素", "id": "relationship-view.select-related-element", "command": "relationship-view:select-related-element" },
+      { "label": "选择关系", "id": "relationship-view.select-relationship", "command": "relationship-view:select-relationship" }
+    ]
+  }
+}

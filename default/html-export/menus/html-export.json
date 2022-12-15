@@ -1,0 +1,11 @@
+{
+  "menu": [
+    {
+      "id": "file.export",
+      "submenu": [
+        { "type": "separator" },
+        { "label": "网页文档...", "id": "file.export.html-export", "command": "html-export:export" }
+      ]
+    }
+  ]
+}
