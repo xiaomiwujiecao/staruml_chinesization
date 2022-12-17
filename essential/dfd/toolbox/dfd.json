@@ -1,6 +1,6 @@
 [
   {
-    "label": "Data Flow",
+    "label": "数据流",
     "id": "dfd",
     "diagram-types": [ "DFDDiagram" ],
     "auto-expands": [ "DFDDiagram" ],

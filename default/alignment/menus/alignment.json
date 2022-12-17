@@ -37,7 +37,7 @@
         "submenu": [
           { "type": "separator" },
           {
-            "label": "Alignment",
+            "label": "调整装置",
             "id": "format.alignment",
             "submenu": [
               { "label": "发送到底层", "id": "format.alignment.send-to-back", "command": "alignment:send-to-back" },

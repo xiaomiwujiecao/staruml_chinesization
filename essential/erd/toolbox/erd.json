@@ -1,6 +1,6 @@
 [
   {
-    "label": "Entity-Relationship",
+    "label": "实体关系",
     "id": "erd",
     "diagram-types": [ "ERDDiagram" ],
     "auto-expands": [ "ERDDiagram" ],

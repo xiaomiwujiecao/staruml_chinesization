@@ -111,10 +111,10 @@
       "submenu": [
         { "type": "separator" },
         {
-          "label": "Apply Profile",
+          "label": "应用配置文件",
           "id": "uml.apply-profile",
           "submenu": [
-            { "label": "UML Standard Profile (v2)", "id": "uml.apply-profile.uml-standard", "command": "uml:apply-profile.uml-standard" }
+            { "label": "UML 标准预置文件 (v2)", "id": "uml.apply-profile.uml-standard", "command": "uml:apply-profile.uml-standard" }
           ]
         }
       ]
@@ -188,7 +188,7 @@
           { "label": "活动图", "id": "uml.activity-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLActivityDiagram"} },
           { "label": "剖面图", "id": "uml.profile-diagram", "command": "factory:create-diagram", "command-arg": {"id": "UMLProfileDiagram"} }
         ]
-      },  
+      },
       {
         "id": "format",
         "submenu": [
@@ -287,7 +287,7 @@
           { "label": "活动", "id": "uml.action", "command": "factory:create-model", "command-arg": {"id": "UMLAction", "field": "nodes"} },
           { "label": "约束", "id": "uml.constraint", "command": "uml:create-model.constraint" }
         ]
-      } 
+      }
     ]
   }
 }

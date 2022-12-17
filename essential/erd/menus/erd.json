@@ -3,7 +3,7 @@
     {
       "id": "file.new-from-template",
       "submenu": [
-        { "label": "Data Model", "command": "erd:new-from-template", "command-arg": "templates/DataModel.mdj" }
+        { "label": "数据模型", "command": "erd:new-from-template", "command-arg": "templates/DataModel.mdj" }
       ]
     },
     {
@@ -42,7 +42,7 @@
         "submenu": [
           { "label": "实体关系图", "id": "erd.diagram", "command": "factory:create-diagram", "command-arg": {"id": "ERDDiagram"} }
         ]
-      },  
+      },
       {
         "id": "format",
         "submenu": [

@@ -1,6 +1,6 @@
 [
   {
-    "label": "Flowchart",
+    "label": "流程图",
     "id": "flowchart",
     "diagram-types": [ "FCFlowchartDiagram" ],
     "auto-expands": [ "FCFlowchartDiagram" ],
