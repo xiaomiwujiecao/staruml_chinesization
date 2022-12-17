@@ -126,7 +126,7 @@
       { "label": "包", "id": "UMLPackage", "icon": "icon-UMLPackage", "rubberband": "rect" },
       { "label": "模型", "id": "UMLModel", "icon": "icon-UMLModel", "rubberband": "rect" },
       { "label": "子系统", "id": "UMLSubsystem", "icon": "icon-UMLSubsystem", "rubberband": "rect" },
-      { "label": "容量", "id": "UMLContainment", "icon": "icon-UMLContainment", "rubberband": "line" },
+      { "label": "控制", "id": "UMLContainment", "icon": "icon-UMLContainment", "rubberband": "line" },
       { "label": "依赖性", "id": "UMLDependency", "icon": "icon-UMLDependency", "rubberband": "line" }
     ]
   },
