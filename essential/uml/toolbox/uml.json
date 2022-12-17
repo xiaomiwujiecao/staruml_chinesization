@@ -659,7 +659,7 @@
     "auto-expands": [ "UMLProfileDiagram" ],
     "items": [
       { "label": "元类", "id": "UMLMetaClass", "icon": "icon-UMLMetaClass", "rubberband": "rect" },
-      { "label": "刻板印象", "id": "UMLStereotype", "icon": "icon-UMLStereotype", "rubberband": "rect" },
+      { "label": "墨守成规", "id": "UMLStereotype", "icon": "icon-UMLStereotype", "rubberband": "rect" },
       { "label": "枚举", "id": "UMLEnumeration", "icon": "icon-UMLEnumeration", "rubberband": "rect" },
       { "label": "延伸, 扩展", "id": "UMLExtension", "icon": "icon-UMLExtension", "rubberband": "line" },
       { "label": "概括", "id": "UMLGeneralization", "icon": "icon-UMLGeneralization", "rubberband": "line" }
