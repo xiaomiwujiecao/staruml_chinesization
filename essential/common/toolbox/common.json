@@ -11,7 +11,7 @@
       { "label": "超链接", "id": "Hyperlink", "icon": "icon-Hyperlink", "rubberband": "rect", "command-arg": { "min-width": 70, "min-height": 20 } },
       { "label": "长方形", "id": "Rect", "icon": "icon-Rectangle", "rubberband": "rect", "command-arg": { "min-width": 50, "min-height": 50 } },
       { "label": "椭圆矩形", "id": "RoundRect", "icon": "icon-RoundedRectangle", "rubberband": "rect", "command-arg": { "min-width": 50, "min-height": 50 } },
-      { "label": "]椭圆形", "id": "Ellipse", "icon": "icon-Ellipse", "rubberband": "rect", "command-arg": { "min-width": 50, "min-height": 50 } },
+      { "label": "椭圆形", "id": "Ellipse", "icon": "icon-Ellipse", "rubberband": "rect", "command-arg": { "min-width": 50, "min-height": 50 } },
       { "label": "图片", "id": "Image", "icon": "icon-Image", "rubberband": "rect", "command-arg": { "min-width": 100, "min-height": 100 } }
     ]
   }
